@@ -26,11 +26,11 @@ jobs:
       - name: Build
         run: npm run build
 
-      - name: Archive Production Artifact
-        uses: actions/upload-artifact@master
+      - name: Upload Production Artifact
+        uses: actions/upload-artifact@v4
         with:
-          name: public
-          path: ./public
+          name: production-files
+          path: ./build
   
 
        
