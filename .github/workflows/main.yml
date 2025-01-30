@@ -44,8 +44,8 @@ jobs:
           name: production-files
           path: ./build
 
-      - name: Deploy to GitHub Pages
-        uses: axetroy/gh-pages-action@0.0.21
+      - name: Angular Deploy gh-pages Actions
+        uses: AhsanAyaz/angular-deploy-gh-pages-actions@v1.4.0
         with:
           github_token: ${{secrets.TOKEN}}
           publish_dir: ./build
